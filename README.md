@@ -41,9 +41,11 @@ It possible to check MongoDB content using any MongoDB management tool. I used [
 
 ![Inserted subscription](/resources/robo3T.jpg)
 
+
+
 # CI/CD proposal
 
-##Tools:
+## Tools:
 
 Jenkins - CI/CD - NOT IMPLEMENTED To do in a SIT/UAT/PROD environment
 Git/GitHub - Source Control Management
@@ -55,11 +57,13 @@ Each service is a simple web service written in Java with the Spring Boot framew
 Maven is the build tool and GitHub the source code repository.
 Each commit to GIT repo is able to trigger a Jenkins build, using Maven to compile the code, run tests and so on.
 
-##System Schema
+## System Schema
 
 ![Application built schema](/resources/schema2.JPG)
 
 ![Running schema](/resources/schema3.jpg)
+
+
 
 # Improvements:
 
