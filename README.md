@@ -47,11 +47,11 @@ It possible to check MongoDB content using any MongoDB management tool. I used [
 
 ## Tools:
 
-Jenkins - CI/CD - NOT IMPLEMENTED To do in a SIT/UAT/PROD environment
-Git/GitHub - Source Control Management
-Docker - Container
-Maven — Build tool
-Docker Compose - Run and define Docker apps
+- Jenkins - CI/CD - NOT IMPLEMENTED To do in a SIT/UAT/PROD environment
+- Git/GitHub - Source Control Management
+- Docker - Container
+- Maven - Build tool
+- Docker Compose - Run and define Docker apps
 
 Each service is a simple web service written in Java with the Spring Boot framework.
 Maven is the build tool and GitHub the source code repository.
