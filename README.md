@@ -33,7 +33,7 @@ To fill a correct subscription in request body to be sent, here you are an examp
 
 ![Postman request example](/resources/postman.jpg)
 
-Swagger definition is in next [link](/AdidasSubscriptionService/swagger.yaml)
+Swagger API definition is in next [link](/AdidasSubscriptionService/swagger.yaml) You can use [Swagger Editor](https://editor.swagger.io/) to display it and test it in a better way.
 
 Result will be subscription ID generated. Subscription is inserted in a MongoDB test database.
 
@@ -41,9 +41,9 @@ It possible to check MongoDB content using any MongoDB management tool. I used [
 
 ![Inserted subscription](/resources/robo3T.jpg)
 
-## CI/CD proposal
+# CI/CD proposal
 
-###Tools:
+##Tools:
 
 Jenkins - CI/CD - NOT IMPLEMENTED To do in a SIT/UAT/PROD environment
 Git/GitHub - Source Control Management
@@ -55,18 +55,19 @@ Each service is a simple web service written in Java with the Spring Boot framew
 Maven is the build tool and GitHub the source code repository.
 Each commit to GIT repo is able to trigger a Jenkins build, using Maven to compile the code, run tests and so on.
 
-###System Schema
+##System Schema
 
-![Application built schema](/resources/schema2.jpg)
+![Application built schema](/resources/schema2.JPG)
 
-![Running schema](/resources/schema2.jpg)
+![Running schema](/resources/schema3.jpg)
 
-## Improvements:
+# Improvements:
 
 There are some improvements that should be made here:
 - **Scalation**: Include a new HAProxy service taking it directly from Docker HUB. It provides flexible caching capabilities, can be used as a reverse proxy and as load balancer. 
 - **Testing**: Include testing for the three services.
 - **Caching strategy**: Caching inside the `product-review` app is being emptied each hour and updated along with other CRUD operations. A more subtle strategy should be used, depending on how often the data might change and the importance of having the fresh data in real time.
+- **Events**: Include some software to manage events instead of Events Service, such as RabbitMQ or Apache Kafka.
 - **Security**: No security has been implemented so, it's easy to improve it. It's possible to add spring security in Email and Events service (fe Spring Security) and also authentication in MongoDB as some basic measures.
 - **Error handling** No logging nor error handling has been implemented. 
 - And finally, always it's possible to improve the code 
