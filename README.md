@@ -30,7 +30,8 @@ To fill a correct subscription in request body to be sent, here you are an examp
     "newsletterId": 4654654
 }
 ````
-[[/resources/postman.jpg|alt=Postman request example]]
+
+![Postman request example](/resources/postman.jpg)
 
 Swagger definition is in next [link](/AdidasSubscriptionService/swagger.yaml)
 
@@ -38,7 +39,7 @@ Result will be subscription ID generated. Subscription is inserted in a MongoDB 
 
 It possible to check MongoDB content using any MongoDB management tool. I used [Robo 3T](https://robomongo.org/), but any other or using console directly is enough to check MongoDB content.
 
-[[/resources/robo3T.jpg|alt=Inserted subscription]]
+![Inserted subscription](/resources/robo3T.jpg)
 
 ## CI/CD proposal
 
@@ -56,9 +57,9 @@ Each commit to GIT repo is able to trigger a Jenkins build, using Maven to compi
 
 ###System Schema
 
-[[/resources/schema2.jpg|alt=Application built schema]]
+![Application built schema](/resources/schema2.jpg)
 
-[[/resources/schema2.jpg|alt=Running schema]]
+![Running schema](/resources/schema2.jpg)
 
 ## Improvements:
 
